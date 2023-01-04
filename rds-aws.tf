@@ -4,6 +4,7 @@ provider "aws" {
   secret_key = "chave secreta"
 }
 
+# RDS utilizando a engine do MySQL 8.0
 resource "aws_db_instance" "mysql-terraform" {
   allocated_storage    = 20
   max_allocated_storage = 100
